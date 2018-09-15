@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+\usepackage{fullpage}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\usepackage{enumitem} % Used to reduce the space between items in itemize
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+\par{\hfill\centering{\Huge Hadrien \textsc{Renaud}}\hfill
+\begin{tabular}{|r}
+\href{mailto:hadrien.renaud@polytechnique.edu}{hadrien.renaud@polytechnique.edu}\\
++33 6 72 79 70 15\\
+Appartement 10.20.52\\
+89 boulevard des Maréchaux \\
+91120 Palaiseau
+FRANCE
+\end{tabular}
+\bigskip\par} % Your name
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{Oct 2017--Apr 2018} & Work placement at \textbf{Direction Générale de l'Armement} (French armament procurement agency)
+\small{\begin{itemize}[noitemsep, nolistsep, leftmargin=0.5cm]
+  \item Developed a numerical simulation project to evaluate the risks of a soldier wearing a personal protective equipment against chemical weapons.
+  \item Analyzed experiments. Gave expertise on scientific methods to test gas masks and their results.
+  \item Managed a team of 3 people (including me).
+\end{itemize}}\\
+
+%------------------------------------------------
+
+\textsc{July 2016} & Work placement at \textbf{EDF}, Paris. \\
+& \small{Archived files, built an Excel Macro to automatically archive the files.}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{r|p{11cm}}
+\emph{Currently} & Second-Year student at the \textbf{École Polytechnique}, Paris, France \\
+\textsc{Sept} 2017 & \small{France’s leading university-level school of science and engineering.
+Major in Informatics and Math. Other subjects : Physics, Biology, Economics.
+Group project in informatics for macroeconomics prediction (in parternship with BNP).
+GPA : $3.73/4$.}
+\\ & \\
+%------------------------------------------------
+
+\textsc{July 2017} & Competitive \textbf{undergraduate program} at the Lycée ``Henri IV'', Paris\\
+\textsc{Sept 2015} & \small{A two-year intensive university-level preparation
+to prepare for highly competitive nationwide exam.
+Subjects studied : Math, Physics, Informatics. Group project: ``Neural networks for caracters recognition''.}
+\\&\\
+%------------------------------------------------
+
+\textsc{July 2015} & \textbf{Lycée ``Henri IV''}, Paris\\
+\textsc{Sept 2012} & \small{Major in Math. Other subjects studied : Physics, Informatics, Biology, Philosophy.}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+  \textsc{French:} & Native \\
+  \textsc{English:} & Advanced (C1)\\
+  \textsc{German:} & Good Knowledge (B2)\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+
+\begin{itemize}[noitemsep]
+  \item Works at Student Association for giving access to students to various web services that we build.
+  \item Volunteer in the association ``La Chorba'' which helps homeless people.
+  \item Sports : swimming (6h per week), running.
+  \item Played piano for 8 years. Played chess for 4 years in a club (gave lessons too).
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\begin{tabular}{rl}
+  Expert: & Python\\
+  Good Knowledge: & Java, Linux, MySQL, C/C++\\
+  Intermediate Knowledge: & Web (HTML, CSS, JS, Cordova), \LaTeX, VBA, OCaml
+\end{tabular}
+
+
+
+\end{document}
