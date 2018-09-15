@@ -46,7 +46,7 @@
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
 \usepackage{enumitem} % Used to reduce the space between items in itemize
-
+\usepackage{tabularx} % Used to customize tabular.
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
@@ -59,13 +59,13 @@
 
 
 \par{\hfill\centering{\Huge Hadrien \textsc{Renaud}}\hfill
-\begin{tabular}{|r}
+\begin{tabular}{r}
 \href{mailto:hadrien.renaud@polytechnique.edu}{hadrien.renaud@polytechnique.edu}\\
-+33 6 72 79 70 15\\
-Appartement 10.20.52\\
-89 boulevard des Maréchaux \\
-91120 Palaiseau
-FRANCE
++33 6 72 79 70 15
+% Appartement 10.20.52\\
+%89 boulevard des Maréchaux \\
+%91120 Palaiseau
+%FRANCE
 \end{tabular}
 \bigskip\par} % Your name
 
@@ -76,9 +76,14 @@ FRANCE
 
 \section{Work Experience}
 
-\begin{tabular}{r|p{11cm}}
-\textsc{Oct 2017--Apr 2018} & Work placement at \textbf{Direction Générale de l'Armement} (French armament procurement agency)
-\small{\begin{itemize}[noitemsep, nolistsep, leftmargin=0.5cm]
+\begin{tabularx}{\linewidth}{r|X}
+  \emph{Currently} & Reviewer at the \textbf{Lycée "Henri IV"}, Paris.\\
+  \textsc{Sept 2018} & \small{Tutorials and fake jury in small groups for students preparing nationwide exam in Maths. 1hour per week.}
+  \\&\\
+
+\textsc{Oct 2017} & Work placement at \textbf{Direction Générale de l'Armement}
+\textsc{Apr 2018}  \small{(French armament procurement agency)
+\begin{itemize}[noitemsep, nolistsep, leftmargin=0.5cm]
   \item Developed a numerical simulation project to evaluate the risks of a soldier wearing a personal protective equipment against chemical weapons.
   \item Analyzed experiments. Gave expertise on scientific methods to test gas masks and their results.
   \item Managed a team of 3 people (including me).
@@ -88,7 +93,7 @@ FRANCE
 
 \textsc{July 2016} & Work placement at \textbf{EDF}, Paris. \\
 & \small{Archived files, built an Excel Macro to automatically archive the files.}
-\end{tabular}
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -96,7 +101,7 @@ FRANCE
 
 \section{Education}
 
-\begin{tabular}{r|p{11cm}}
+\begin{tabularx}{\linewidth}{r|X}
 \emph{Currently} & Second-Year student at the \textbf{École Polytechnique}, Paris, France \\
 \textsc{Sept} 2017 & \small{France’s leading university-level school of science and engineering.
 Major in Informatics and Math. Other subjects : Physics, Biology, Economics.
@@ -105,16 +110,16 @@ GPA : $3.73/4$.}
 \\ & \\
 %------------------------------------------------
 
-\textsc{July 2017} & Competitive \textbf{undergraduate program} at the Lycée ``Henri IV'', Paris\\
+\textsc{July 2017} & Competitive \textbf{undergraduate program} at the Lycée "Henri IV", Paris\\
 \textsc{Sept 2015} & \small{A two-year intensive university-level preparation
 to prepare for highly competitive nationwide exam.
-Subjects studied : Math, Physics, Informatics. Group project: ``Neural networks for caracters recognition''.}
+Subjects studied : Math, Physics, Informatics. Group project: "Neural networks for caracters recognition".}
 \\&\\
 %------------------------------------------------
 
-\textsc{July 2015} & \textbf{Lycée ``Henri IV''}, Paris\\
-\textsc{Sept 2012} & \small{Major in Math. Other subjects studied : Physics, Informatics, Biology, Philosophy.}
-\end{tabular}
+\textsc{July 2015} & \textbf{Lycée "Henri IV"}, Paris\\
+\textsc{Sept 2012} & \small{Major in Math. Other subjects studied : Physics, Informatics, Biology.}
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES
